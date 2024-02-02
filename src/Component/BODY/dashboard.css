@@ -1,0 +1,30 @@
+.dash{
+    display: flex;
+    justify-content: center;
+    background-color:#262a3b;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btnn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    border-radius: 8px 0px 0px 8px;;
+  }
+  
+  .btnn:hover {
+    background-color: white;
+    color: black;
+  }
+  .logo{
+    position: absolute;
+  }

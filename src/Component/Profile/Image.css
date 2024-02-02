@@ -1,0 +1,28 @@
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    font-size: 14px;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+.card .imgs {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: none;
+    width: 13vw;
+}
+
+.card{
+    position: relative !important;
+    display: inline-table !important;
+}
+.social img{
+    height: 25px;
+}

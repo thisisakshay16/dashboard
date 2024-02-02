@@ -1,0 +1,35 @@
+.bx{
+  background-color: white;
+  width: 19vw;
+  margin-left: 10%;
+  border-radius: 8px;
+}
+
+.pie-container{
+  padding: 20px;
+}
+
+/* Add these styles to your CSS file or style section */
+
+.legend {
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.legend-color {
+  width: 20px; /* Adjust the width of the color circle */
+  height: 20px; /* Adjust the height of the color circle */
+  border-radius: 50%;
+  margin-right: 5px; /* Adjust the margin between color and text */
+}
+
+.legend-text {
+  white-space: nowrap; /* Prevent text from wrapping */
+}

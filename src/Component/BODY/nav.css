@@ -1,0 +1,29 @@
+.nav{
+    width: 100%;
+}
+
+.card{
+    width: 12vw;
+    float: inline-end;
+    padding: 3px;
+}
+
+.card img{
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border: none;
+}
+
+.name{
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+}
+.email{
+    font-size: xx-small;
+    font-weight: 500;
+    text-align: center;
+}
