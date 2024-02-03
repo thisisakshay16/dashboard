@@ -2,13 +2,16 @@
     display: flex;
     justify-content: center;
     background-color:#262a3b;
+    height: 100vh;
 }
 .menu{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-color: #272a3a;
 }
 .btnn {
+    display: flex;
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -20,6 +23,12 @@
     text-decoration: none;
     border-radius: 8px 0px 0px 8px;;
   }
+
+  .btnn img{
+    margin-right: 7px;
+    height: 15px;
+    margin-top: 4px;
+    }
   
   .btnn:hover {
     background-color: white;

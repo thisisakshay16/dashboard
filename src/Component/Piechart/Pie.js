@@ -1,12 +1,23 @@
-// Pie.js
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchPieChartData } from '../../services/apiService';
 import './pie.css';
 
 const Pie = () => {
-  const data = [20, 30, 15, 25, 10];
-  const colors = ['#4CAF50', '#5CBF4B', '#6DDA45', '#7EF540', '#8CFB36'];
-  const categories = ['Category A', 'Category B', 'Category C', 'Category D', 'Category E'];
+  const [graphData, setGraphData] = useState([]);
+
+  useEffect(() => {
+    // Fetch graph data
+    fetchPieChartData().then((data) => {setGraphData(data)
+      console.log('dataa',data)
+    }  );
+   
+  }, []);
+
+
+  const data = graphData.map(x => x.value);
+  console.log('data----',data)
+  const colors = ['#7ec18b', '#97cea3', '#b2dcbb', '#cee8d4', '#ecf5ed'];
+  const categories = graphData.map(x => x.label);;
 
   const total = data.reduce((acc, value) => acc + value, 0);
 

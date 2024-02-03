@@ -11,7 +11,8 @@ function TableComponent() {
 
   useEffect(() => {
     // Fetch table data
-    fetchTableData().then((data) => setTableData(data));
+    fetchTableData().then((data) => {setTableData(data)
+    console.log('dataa',data)});
   }, []);
 
 
